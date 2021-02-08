@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/survey-form.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Survey Says "Go Home!"</h1>
+        <p id="description">We have decided today to put together a survey to learn more from you, the people. We want to know about your thoughts & feelings regarding the future of the Family Feud and it's hosts.</p>
+        <form id="survey-form" action="">
+            <div>
+                <label for="name" id="name-label">
+                    <input id="name" placeholder="Name" required>
+                </label>
+                <label for="email" id="email-label">
+                    <input id="email" placeholder="Email" type="email" required> <!-- validation error -->
+                </label>
+                <label for="number" id="number-label">Age but not too OLD
+                    <input id="number" type="number" placeholder="age" min="0" max="99" required> <!-- validation error & pre determined range-->
+                </label>
+            </div>
+            <br>
+            <div>
+                <h2>Who will be the next host of Family Feud?</h2>
+                <label for="radio-input">
+                    <input id="radio" type="radio" value="richard-karn" name="next-host">Richard Karn
+                    <input id="menu" list="dropdown" placeholder="Goodness" required>
+                        <datalist id="dropdown">
+                            <option value="Good">
+                            <option value="Okayish">
+                            <option value="Awful">
+                        </datalist>
+                    <br>
+                    <input id="radio" type="radio" value="tim-allen" name="next-host">Tim Allen
+                    <input id="menu" list="dropdown" placeholder="Goodness" required>
+                    <datalist id="dropdown">
+                        <option value="Good">
+                        <option value="Okayish">
+                        <option value="Awful">
+                    </datalist>
+                 <br>
+                    <input id="radio" type="radio" value="bob-villa" name="next-host">Bob Villa
+                    <input id="menu" list="dropdown" placeholder="Goodness" required>
+                    <datalist id="dropdown">
+                        <option value="Good"></option>
+                        <option value="Okayish"></option>
+                        <option value="Awful"></option>
+                    </datalist>
+                 <br>
+                    <input id="radio" type="radio" value="wayne-gretzky" name="next-host">Wayne Gretzky
+                    <input id="menu" list="dropdown" placeholder="Goodness" required>
+                    <datalist id="dropdown">
+                        <option value="Good">
+                        <option value="Okayish">
+                        <option value="Awful">
+                    </datalist>
+                 <br>
+                </label>
+                <h2>What days of the week do you watch Family Feud?</h2>
+                <p>[Please Select ALL that Apply]</p>
+                    <input name="monday" value="monday" type="checkbox" checked>Monday
+                    <input name="tuesday" value="tuesday" type="checkbox">Tuesday
+                    <input name="wednesday" value="wednesday" type="checkbox">Wednesday
+                    <input name="thursday" value="thursday" type="checkbox">Thursday
+                    <input name="friday" value="friday" type="checkbox">Friday
+                    <input name="saturday" value="saturday" type="checkbox">Saturday
+                    <input name="sunday" value="sunday" type="checkbox">Sunday
+                 <br>
+                <h3>Additional Comments</h3>
+                <p>Including thoughts on other future potential hosts.</p>
+                <textarea name="additional-comments">Enter Comments Here...</textarea>
+            </div>
+            <br>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
