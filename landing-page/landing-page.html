@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        html {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body {
+            background-color: black;
+            color: chartreuse;
+        }
+        header {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            background-color: darkgray;
+        }
+        nav {
+            order: 2;
+            align-self: flex-end;
+            color: darksalmon;
+        }
+        #header-img {
+            order: 1;
+            align-self: flex-start;
+        }
+        #video {
+            display: flex;
+            align-self: center;
+        }
+        @media (max-width: 100px) {
+            p {
+                font-size: 10px;
+            }
+        #more-info {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: baseline;
+        }
+        #one {
+            order: 1;
+        }
+        #two {
+            order: 2;
+        }
+        #three {
+            order: 3;
+        }
+        }
+    </style>
+    <head>
+        <title>Hats Co Sell</title>
+    </head>
+    <header id="header">
+        <img id="header-img" src="images/Screen Shot 2021-02-09 at 11.33.20 AM.png" alt="Company Logo">
+        <nav id="nav-bar">
+        <a href="#title" id="nav-link" class="nav-link">Buy A Hat</a> <!--take to corresponding section-->
+        <a href="#video-heading" id="nav-link" class="nav-link">Sell A Hat</a>
+        <a href="#more-info" id="nav-link" class="nav-link">Jump Thru a Hat</a>
+        </nav>
+    </header>
+    <body>
+        <h1 id="title">To Get All the Hats</h1>
+        <h3 id="sell-a-hat">Enter your email below</h3>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input id="email" type="email" name="email" placeholder="Email Address" required>
+                <input id="submit" type="submit" value="YO!" class="btn">
+            </form>
+            <div id="stuff">
+                <p>
+                    Here is the story of hats! And then there is this terrific video of a young lady just jumping
+                    into nothing! Why would she do that do you ask? Well garbage stuff you know.
+                    ANd we continue to type because what else can we do? And we want to fill some space.
+                </p>
+            </div>
+            <br>
+            <h3 id="video-heading">A Video of some Crazy Shit!</h3>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/eUr8a5dfYFw" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <div id="more-info">
+                <p id="one">
+                    info and more info. wow this is great.
+                    <input type="button" value="Do It!">
+                </p>
+                <p id="two">
+                    less exciting info. this seems like a drag.
+                    <input type="submit" value="No Don't">
+                </p>
+                <p id="three">
+                    Some intermediate info. Don't worry if you're not interested. but this is kind of interesting.
+                    <input type="submit" value="It's Okay.">
+                </p>
+            </div>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
